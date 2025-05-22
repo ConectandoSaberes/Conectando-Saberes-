@@ -4,6 +4,8 @@
       font-family: Arial, sans-serif;
       background-color:#55555 ; /* fundo roxo */
       color: #fff;
+        border: 5px solid red;
+        
     }
  
     .container {
