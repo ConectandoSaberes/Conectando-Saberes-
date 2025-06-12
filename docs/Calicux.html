@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Calicux - Conectando Saberes</title>
+  <style>
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #5a189a; /* fundo roxo */
+      color: #fff; 
+    }
+ 
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+ 
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+ 
+    .step {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+ 
+    .step img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+ 
+    .step h2 {
+      margin-top: 0;
+      color: #ffd6ff;
+    }
+ 
+    .step p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+      .step h2 {
+        font-size: 20px;
+      }
+      .step p {
+        font-size: 14px;
+      }
+      </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Calicux  </h1>
+ 
+    <div class="step">
+      <h2>Objetivo</h2>
+      <p>Descrever os passos necessários para monitoração da rede da Vivo com o auxílio da ferramenta Elastic search. </p>
+      <h2>Quando aplicar o procedimento</h2>
+      <p>Quando for necessario analizar possível falha</h2>
+      <p>Acesso ao navegador Google Chrome;</p>
+      <p>Acesso a VPN da rede Corporativa (BIG-IP Edge Client); </p>
+      <p>Acesso a VPN de gerência (FortiClient).</p>
+      </div>
+ 
+    <div class="step">
+      <h2>Apresentação do procedimento detalhado </h2>
+      <p>Para cessar a plataforma: <strong><a href="https://calicux.service-insights.com/spaces/space_selector">Clique aqui</a></strong></p>
+      <p>Login com usuário e senha pessoais.</p>
+      <ul>
+        <li>ID do usuário: <strong>Login pessoal;</strong> </li>
+        <li>Senha: <strong>Senha pessoal;</strong> </li>
+      </ul>
+      <br>
+      <h2>Login.</h2>
+      <img src="imagens/CalicuxIMG/calicux (1).jpeg" alt="calicux">
+      <p><strong = style="background-color: red;">IMPORTANTE:</strong> Caso não tenha acesso a ferramenta o colaborador deve abrir um chamado no GAUS.</p>
+      <br>
+      <p>Após o login no site você será direcionado para selecionar o espaço no qual será monitorado a rede: </p>
+      <img src="imagens/CalicuxIMG/calicux (2).jpeg" alt="calicux">
+      <p><strong = style="color: chartreuse;"> Observação: Brasil (Showroom) é a view consolidada que a Espanha criou para visualizar os dados relacionados a OB Brasil. Excelência Operativa foi criado para mostrar os dashboards do Open Platform mostrando a qualidade do serviço. Operações TV Brasil é a nossa view de monitoração da rede. </strong></p>
+      <br>
+      <p>Após a escolha do espaço, você será direcionado para a página Home, ou a última página que estava aberto. </p>
+      <img src="imagens/CalicuxIMG/calicux (3).jpeg" alt="calicux">
+      <p>O Dashboard de monitoração que utilizamos no VOC é o <strong><a href="https://calicux.service-insights.com/spaces/space_selector"> 0.0 - VOC - Troubleshooting </a></strong></p>
+      <p><strong = style="color: darkorange;">Campo Pesquisa:</strong> Podemos filtrar Agregadores/SWC, SWD’s, OLT’s, Canais, Designador de TV, CASN, GA e código de Erro. </p>
+      <p><strong = style="color: rgb(0, 183, 255);">SWC (Switch Core):</strong> Switch core é o termo associado aos comutadores centrais de grandes infraestruturas de TI, ou seja, aqueles que centralizam o tráfego de dados de outros switches. Esses equipamentos geralmente são velozes, possuem grande capacidade de comutação de pacotes e várias portas de alta velocidade. operaram em Layer 3 (Camada 3). topology_5: "BR-SNE-SA-SWC1". </p>
+      <p><strong = style="color: rgb(255, 0, 64);">SWD (Switch Distrubuidor):</strong> o switch de distribuição é um elemento intermediário entre os switches core e os switches de borda. Esses equipamentos normalmente são utilizados em redes locais de empresas de grande porte, geralmente com múltiplos prédios e centenas de dispositivos conectados. topology_4: "BR-SNE-ST-SWD2". </p> 
+      <p><strong = style="color: rgb(0, 255, 64);">OLT:</strong> Optical Line Terminal (OLT), ou em tradução livre Terminal de Linha Óptica é o responsável pela conexão de equipamentos terminais de fibra óptica e o gerenciamento do sistema de uma rede GPON. topology_3: "MGBHE_G1M59". </p>
+      <p><strong = style="color: rgb(25, 0, 255);"> Canais:</strong> Mostra todos os canais que possuímos no Lineup da Vivo. title: "GNT HD". </p>
+      <p><strong = style="color: rgb(251, 255, 0);">Designador de TV:</strong> Usado para identificar a conta do cliente, cada equipamento está atrelado ao designador do cliente. Cada cliente possui o seu designador. user_unique_id: "VOC_CTA_BANCADA". </p>
+      <p><strong = style="color: rgb(255, 0, 221);">CASN:</strong> Identificador único do STB. EX: 2310041586 (10 primeiros números). device_id: "2310041586". </p>
+      <p><strong = style="color: rgb(0, 110, 255);">Código de Erros:</strong> Usado para filtrar um determinado código de erro. error_code: "204"</p>
+      <p><strong = style="color: rgb(255, 4, 100);">GA:</strong> Área geográfica de uma determinada cidade. geographic_area: "103". </p>
+      <br>
+      <h2><strong>Interruptions - Regionais:</strong></h2>
+      <p>Mostra a soma de buffer events de uma determinada região. Na monitoração está dividido da seguinte forma (SP Capital, SP Interior, Sudeste, Sul, Centro-Oeste, Nordeste e Norte). </p>
+      <img src="imagens/CalicuxIMG/calicux (4).jpeg" alt="calicux">
+      <p>* Interruptions (Buffer_events): Número de eventos de perda de sinal durante a sessão (caso Live) ou "buffering" (caso VoD). </p>
+      <br>
+      <h2><strong>Interruptions - Agregadores e SWC's:</strong></h2>
+      <p>Mostra a soma de buffer events de uma determinada região filtrando por Agregadores e SWC’s (Topology_5). </p>
+      <img src="imagens/CalicuxIMG/calicux (5).jpeg" alt="calicux">
+      <br>
+      <h2><strong>Interruptions - Geographic Area:</strong></h2>
+      <p>Mostra a soma de buffer events utilizando o código da área geográfica da cidade. </p>
+      <img src="imagens/CalicuxIMG/calicux (9).jpeg" alt="calicux">
+      <br>
+      <h2><strong>Interruptions - SWD's:</strong></h2>
+      <p>Mostra a soma de buffer events de uma determinada região filtrando por SWD’s (Topology_4). </p>
+      <img src="imagens/CalicuxIMG/calicux (10).jpeg" alt="calicux">
+      <br>
+      <h2><strong>Interruptions - OLT's: </strong></h2>
+      <p>Mostra a soma de buffer events de uma determinada região filtrando por OLT’s (Topology_3). </p>
+      <img src="imagens/CalicuxIMG/calicux (11).jpeg" alt="calicux">
+      <br>
+      <h2><strong>Interruptions – Canais: </strong></h2>
+      <p>Mostra a soma de buffer events de um determinado canal (title). </p>
+      <img src="imagens/CalicuxIMG/calicux (12).jpeg" alt="calicux">
+      <br>
+      <h2><strong>Interruptions – Clientes:</strong></h2>
+      <p>Mostra a soma de buffer events filtrados por falha em clientes (user_unique_id). </p>
+      <img src="imagens/CalicuxIMG/calicux (13).jpeg" alt="calicux">
+      <h2><strong>Playtime:</strong></h2>
+      <p>Mostra a soma total de Playtime (total_playtime). </p>
+      <img src="imagens/CalicuxIMG/calicux (14).jpeg" alt="calicux">
+      <p>*Playtime: Duração total da sessão, em segundos, incluindo buffer, busca e pausa.</p>
+      <p>Não inclui jointime. </p>
+      <h2><strong>Playtime – Agregadores e SWC:</strong></h2>
+      <p>Mostra a soma total de Playtime (total_playtime) dos agregadores topology_5. </p>
+      <img src="imagens/CalicuxIMG/calicux (15).jpeg" alt="calicux">
+      <h2><strong>Playtime – OLT’s:</strong></h2>
+      <p>Mostra a soma total de Playtime (total_playtime) dos agregadores topology_3. </p>
+      <img src="imagens/CalicuxIMG/calicux (15).jpeg" alt="calicux">
+      <h2><strong>Jointime:</strong></h2>
+      <p>Mostra a Média de join_time. É a diferença de tempo entre a mudança de canal e o início do vídeo. </p>
+      <img src="imagens/CalicuxIMG/calicux (26).jpeg" alt="calicux">
+      <h2><strong>Lost Packets:</strong></h2>
+      <p>Soma de lost_packets dos números de pacotes perdidos RTP (Real-Time Streaming). </p>
+      <img src="imagens/CalicuxIMG/calicux (27).jpeg" alt="calicux">
+      <h2><strong>Packets Loss: </strong></h2>
+      <p>Soma de packet_loss dos números de pacotes multicast não recuperados. Soma o total de todas as visualizações. </p>
+      <img src="imagens/CalicuxIMG/calicux (16).jpeg" alt="calicux">
+      <h2><strong>Fixed Packets:</strong></h2>
+      <p>Soma de fixed_packets dos números de pacotes corrigidos por transmissões. </p>
+      <img src="imagens/CalicuxIMG/calicux (7).jpeg" alt="calicux">
+      <h2><strong>Happiness Score – Regionais:</strong></h2>
+      <p>Mostra a média de happiness_score de uma determinada região. Na monitoração está dividido da seguinte forma (SP Capital, SP Interior, Sudeste, Sul, Centro-Oeste, Nordeste e Norte). </p>
+      <img src="imagens/CalicuxIMG/calicux (17).jpeg" alt="calicux">
+      <p>Happiness Score: Representa o total de todas as reproduções. </p>
+      <h2><strong>Happiness Score - Agregadores e SWC:</strong></h2>
+      <p>Mostra a média de happiness_score filtrando por Agregadores e SWC’s (Topology_5).  </p>
+      <img src="imagens/CalicuxIMG/calicux (8).jpeg" alt="calicux">
+      <h2><strong>Happiness Score - SWD's:</strong></h2>
+      <p>Mostra a média de happiness_score filtrando por SWD’s (Topology_4).   </p>
+      <img src="imagens/CalicuxIMG/calicux (18).jpeg" alt="calicux5">
+      <h2><strong>Happiness Score – OLT’s:</strong></h2>
+      <p>Mostra a média de happiness_score filtrando por OLT’s (Topology_3). </p>
+      <img src="imagens/CalicuxIMG/calicux (19).jpeg" alt="calicux">
+      <h2><strong>Códigos de erro:</strong></h2>
+      <p>Conta a quantidade de código de erros (error_code). Número fornecido internamente ao código de erro retornado pelo STB após a falha. </p>
+      <img src="imagens/CalicuxIMG/calicux (20).jpeg" alt="calicux">
+      <h2><strong>Erro 204 – Agregadores e SWC: </strong></h2>
+      <p>Quantidade de erros filtrando por Agregadores e SWC (Topology_5). </p>
+      <img src="imagens/CalicuxIMG/calicux (21).jpeg" alt="calicux">
+      <h2><strong>Erro 204 – SWD’s: </strong></h2>
+      <p>Quantidade de erros filtrando por SWD’s (Topology_4). </p>
+      <img src="imagens/CalicuxIMG/calicux (22).jpeg" alt="calicux">
+      <h2><strong>Erro 204 – OLT’s: </strong></h2>
+      <p>Quantidade de erros filtrando por OLT’s (Topology_3). </p>
+      <img src="imagens/CalicuxIMG/calicux (23).jpeg" alt="calicux">
+      <h2><strong>Erro 204 – Clientes: </strong></h2>
+      <p>Quantidade de erros filtrando por Unique ID (user_unique_id). </p>
+      <img src="imagens/CalicuxIMG/calicux (24).jpeg" alt="calicux">
+      <h2><strong>Erro 204 – Canais: </strong></h2>
+      <p>Quantidade de erros filtrando por canais (Channel). </p>
+      <img src="imagens/CalicuxIMG/calicux (25).jpeg" alt="calicux">
+      <h2><strong>Heatmap HS por Regional: </strong></h2>
+      <p>Filtra a média de Happiness Score da região a cada 30 minutos.  (Channel). </p>
+      <img src="imagens/CalicuxIMG/calicux (28).jpeg" alt="calicux">
+      <h2><strong>KPI Usuarios únicos: </strong></h2>
+      <p>Soma de usuários (user_unique_id) em determinada região.   (Channel). </p>
+      <img src="imagens/CalicuxIMG/calicux (28).jpeg" alt="calicux">
+      <h2><strong>Consulta de GA (geographic_area)   </strong></h2>
+      <p>Para realizar a busca, pressionar CTRL + F.   (Channel). </p>
+      <img src="imagens/CalicuxIMG/calicux (29).jpeg" alt="calicux">
+      <p>CTRL + F (Digite a cidade a ser buscada), depois clique na flexa para derecionar até a palavra chave buscada. </p>
+      <img src="imagens/CalicuxIMG/calicux (30).jpeg" alt="calicux"
+    </div>
+ 
+    
+</body>
+</html>
